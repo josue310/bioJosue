@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    background-color: #AC9C9E;
+}
+body{
+    background-color: #333;
+}
+.zone{
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(163, 163, 226);
+    margin-top: 100px;
+    margin-left: -50px;
+    border-radius: 5px;
+
+}
+
+ul {
+    list-style-type: none; /* Retire les puces */
+    /*background: #e8e8e8;*/ /* Couleur de fond pour les listes */
+    border-radius: 5px; /* Bordures arrondies pour la liste */
+    padding: 20px; /* Espacement intérieur pour la liste */
+    margin-top: 20px; /* Espacement au-dessus de la liste */
+}
+
+li:before {
+    content: '✔'; /* Ajoute une coche avant chaque élément de la liste */
+    color: #010107; /* Couleur de la coche */
+    position: absolute; /* Positionne la coche dans le contenu */
+    left: -10px; /* Alignement à gauche */
+    font-size: 20px;
+}
+
+img{
+    width: 50%;
+    height: auto; /* Ajuste la hauteur automatiquement */
+    
+}
+
+.container{
+    display: flex;
+    
+}
+
+.presentation{
+    font-size: 20px;
+    line-height: 1.6;
+    padding: 20px; /* Marge interne */
+    background-color: #f2f2f2; /* Couleur de fond */
+    color: #333; /* Couleur du texte */
+    border-radius: 10px; /* Arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre */
+    width: 60%;
+    margin-left: 20px;
+    margin-top: -140px;
+    margin-bottom: 50px;
+    border-left: 4px solid #5c67f2;
+    
+}
+
+li {
+    margin-bottom: 20px; /* Espacement entre les éléments de la liste */
+    padding-left: 10px; /* Espacement à gauche pour le texte de la liste */
+    position: relative; /* Nécessaire pour la pseudo-élément */
+    font-size: 20px;
+} 
+
+h1{
+    font-size: 50px;
+}
+
+.texte{
+    color: blue;
+    font-weight: bold;
+}
+
+footer {
+    
+    width: 100%;           /* Largeur complète */
+    background: #ebebeb;      /* Couleur de fond */
+
+    text-align: center;    /* Centrage du texte */
+    padding: 10px 0;       /* Padding pour l'espacement */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.3); /* Ombre pour une meilleure visibilité */
+}
+
+.icons a {
+      /* Couleur des icônes */
+    margin: 0 10px;        /* Espacement horizontal entre les icônes */
+    font-size: 35px;       /* Taille des icônes */
+    transition: transform 0.3s ease; /* Animation pour effet de zoom */
+}
+
+.icons a:hover {
+    transform: scale(1.2); /* Zoom lors du survol */
+    color: #4CAF50;        /* Change la couleur lors du survol */
+}
+
+
+.gras{
+    font-weight: bold;
+}
+
+/* CSS existant... */
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Empiler les éléments verticalement */
+    }
+  
+    .zone {
+      width: 100%; /* Largeur totale sur les petits écrans */
+      margin-top: 20px; /* Marge supérieure pour l'espacement */
+    }
+  
+    .presentation {
+      width: 100%; /* Largeur totale sur les petits écrans */
+      margin-top: 20px; /* Marge supérieure pour l'espacement */
+    }
+  }
+  
+  /* Typographie réactive */
+  h1 {
+    font-size: 2.5rem; /* Taille de police de base réactive */
+  }
+  
+  /* Images réactives */
+  img {
+    max-width: 100%;
+    height: auto; /* Conserver le ratio d'aspect */
+  }
+  
+  /* Masquage et réarrangement du contenu */
+  @media (max-width: 480px) {
+    .presentation p:last-child { /* Masquer le dernier paragraphe sur les petits écrans */
+      display: none;
+    }
+  }
+  
